@@ -26,11 +26,11 @@
 }
 
 .navbar-brand.enlarge{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .navbar-brand:not(.enlarge){
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 @font-face {
@@ -38,7 +38,49 @@
     src: url("/fonts/SenmolyCaligan.otf");
 }
 
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/SpaceGrotesk.ttf");
+}
+
 a#logoLink{
     font-family: 'Senmoly Caligan', serif;
 }
 
+li.nav-item a.nav-link{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.h3{
+    text-transform: uppercase;
+}
+
+/* slick carousel styling */
+.slider {
+    display: flex;
+  }
+  
+  .slick-track {
+    will-change: transform;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+    will-change: transform;
+  }
+  
+  .slick-slide {
+    padding: 1rem;
+    margin: 2rem;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  }
+  
+  .slick-slide img {
+    height: 100vh;
+    max-height: 60vh;
+    width: 60vh;
+    margin: 0 auto;
+    object-fit: cover;
+    border: solid white 1.5rem;
+    border-radius: 25px;
+  }

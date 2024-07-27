@@ -8,7 +8,7 @@ toggleLogo.onclick = function( ) {
 
 $(document).ready(function(){
     $('.carousel-1').slick({
-        dots:true
+        variableWidth: true
     });
   });
   
