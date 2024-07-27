@@ -1,0 +1,44 @@
+:root{
+    --bs-primary: #e94f37;
+    --bs-primary-rgb: 233, 79, 55;
+
+    --bs-secondary: #ffcc38;
+    --bs-secondary-rgb: 255, 204, 56;
+
+    --bs-tertiary: #9764c7;
+    --bs-tertiary-rgb: 151, 100, 199;
+
+    --bs-light: #f6f7eb;
+    --bs-light-rgb: 246, 247, 235;
+
+
+    --bs-link-color: ;
+    --bs-link-color-rgb: ;
+
+}
+
+.cls-1{
+    fill: var(--bs-light);
+}
+
+.navbar-brand{
+    transition: ease all 1s;
+}
+
+.navbar-brand.enlarge{
+    font-size: 2rem;
+}
+
+.navbar-brand:not(.enlarge){
+    font-size: 3rem;
+}
+
+@font-face {
+    font-family: "Senmoly Caligan";
+    src: url("/fonts/SenmolyCaligan.otf");
+}
+
+a#logoLink{
+    font-family: 'Senmoly Caligan', serif;
+}
+
