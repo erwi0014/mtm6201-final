@@ -1,21 +1,145 @@
-:root{
-    --bs-primary: #e94f37;
-    --bs-primary-rgb: 233, 79, 55;
+/* colours */
+    :root{
+        --bs-primary: #e94f37;
+        --bs-primary-rgb: 233, 79, 55;
 
-    --bs-secondary: #ffcc38;
-    --bs-secondary-rgb: 255, 204, 56;
+        --bs-secondary: #ffcc38;
+        --bs-secondary-rgb: 255, 204, 56;
 
-    --bs-tertiary: #9764c7;
-    --bs-tertiary-rgb: 151, 100, 199;
+        --bs-tertiary: #9764c7;
+        --bs-tertiary-rgb: 151, 100, 199;
 
-    --bs-light: #f6f7eb;
-    --bs-light-rgb: 246, 247, 235;
+        --bs-light: #f6f7eb;
+        --bs-light-rgb: 246, 247, 235;
 
 
-    --bs-link-color: ;
-    --bs-link-color-rgb: ;
+        --bs-link-color: ;
+        --bs-link-color-rgb: ;
 
+        --bs-primary-dark: #AD2B16;
+        --bs-primary-text-emphasis: var(--bs-primary-dark);
+        
+        --bs-secondary-dark: #D4A725;
+        --bs-secondary-text-emphasis: var(--bs-secondary-dark);
+        
+        --bs-tertiary-dark: #5C415D;
+        --bs-tertiary-text-emphasis: var(--bs-tertiary-dark);
+    }
+
+/* fonts */
+@font-face {
+    font-family: "Senmoly Caligan";
+    src: url("/fonts/SenmolyCaligan.otf");
 }
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/SpaceGrotesk.ttf");
+}
+
+.text-tertiary{
+    color: var(--bs-tertiary);
+}
+
+
+/* buttons */
+    .button {
+        position: relative;
+        display: inline-block;
+        border-radius: 30px;
+        overflow: hidden;
+        text-decoration: none;
+        color: var(--bs-light);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 2;
+        color: var(--bs-light);
+        padding: 10px;
+    }
+
+    .btn-text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(4px); 
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    /* ghost buttons */
+    .btn-ghost-primary .btn-text {
+        color: var(--bs-primary);
+    }
+
+    .btn-ghost-primary .btn-text::before{
+        border: solid 4px var(--bs-primary);
+        filter:none
+    }
+
+    .btn-ghost-secondary .btn-text {
+        color: var(--bs-secondary);
+    }
+
+    .btn-ghost-secondary .btn-text::before{
+        border: solid 4px var(--bs-secondary);
+        filter:none
+    }
+
+    .btn-ghost-tertiary .btn-text {
+        color: var(--bs-tertiary);
+    }
+
+    .btn-ghost-tertiary .btn-text::before{
+        border: solid 4px var(--bs-tertiary);
+        filter:none
+    }
+
+
+    /* button colours */
+        .btn-primary .btn-text::before{
+            background-color: var(--bs-primary);
+            border: solid 4px var(--bs-primary-dark);
+        }
+
+        .btn-secondary .btn-text::before{
+            background-color: var(--bs-secondary);
+            border: solid 4px var(--bs-secondary-dark);
+        }
+
+        .btn-tertiary .btn-text::before{
+            background-color: var(--bs-tertiary);
+            border: solid 4px var(--bs-tertiary-dark);
+        }
+
+    
+    /* hover states */
+        .button:hover .btn-text::before{
+            filter: none;
+        }
+
+        .btn-ghost-primary:hover .btn-text{
+            color: var(--bs-light);
+        }
+
+        .btn-ghost-primary:hover .btn-text::before{
+            background-color: var(--bs-primary);
+            border: solid 4px var(--bs-primary-dark);
+        }
+
+
+
+
+
 
 .cls-1{
     fill: var(--bs-light);
@@ -33,15 +157,7 @@
     font-size: 2rem;
 }
 
-@font-face {
-    font-family: "Senmoly Caligan";
-    src: url("/fonts/SenmolyCaligan.otf");
-}
 
-@font-face {
-    font-family: "Space Grotesk";
-    src: url("/fonts/SpaceGrotesk.ttf");
-}
 
 a#logoLink{
     font-family: 'Senmoly Caligan', serif;
@@ -83,4 +199,8 @@ li.nav-item a.nav-link{
     object-fit: cover;
     border: solid white 1.5rem;
     border-radius: 25px;
+  }
+
+  .display-2{
+    font-family: 'Senmoly Caligan', serif;
   }
