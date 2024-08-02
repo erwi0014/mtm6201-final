@@ -1,0 +1,266 @@
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+.html{
+    overscroll-behavior: contain;
+}
+
+/* fonts */
+@font-face {
+    font-family: "Senmoly Caligan";
+    src: url("/fonts/SenmolyCaligan.otf");
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/SpaceGrotesk.ttf");
+}
+
+.text-tertiary{
+    color: var(--bs-tertiary);
+}
+
+img{
+    width: 100%;
+}
+
+/* buttons */
+    
+
+
+    .button {
+        position: relative;
+        display: inline-block;
+        border-radius: 30px;
+        overflow: visible;
+        text-decoration: none;
+        color: var(--bs-light);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 2;
+        color: var(--bs-light);
+        padding: 10px;
+    }
+
+    .btn-text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(6px); 
+        z-index: -1;
+        border-radius: 30px;
+    }
+
+    /* ghost buttons */
+    .btn-ghost-primary .btn-text {
+        color: var(--bs-primary);
+    }
+
+    .btn-ghost-primary .btn-text::before{
+        border: solid 4px var(--bs-primary);
+        filter:none
+    }
+
+    .btn-ghost-secondary .btn-text {
+        color: var(--bs-secondary);
+    }
+
+    .btn-ghost-secondary .btn-text::before{
+        border: solid 4px var(--bs-secondary);
+        filter:none
+    }
+
+    .btn-ghost-tertiary .btn-text {
+        color: var(--bs-tertiary);
+    }
+
+    .btn-ghost-tertiary .btn-text::before{
+        border: solid 4px var(--bs-tertiary);
+        filter:none
+    }
+
+
+    /* button colours */
+        .btn-primary .btn-text::before{
+            background-color: var(--bs-primary);
+            border: solid 4px var(--bs-primary-dark);
+        }
+
+        .btn-secondary .btn-text::before{
+            background-color: var(--bs-secondary);
+            border: solid 4px var(--bs-secondary-dark);
+        }
+
+        .btn-tertiary .btn-text::before{
+            background-color: var(--bs-tertiary);
+            border: solid 4px var(--bs-tertiary-dark);
+        }
+
+    
+    /* hover states */
+        .button:hover .btn-text::before{
+            filter: none;
+        }
+
+        .btn-ghost-primary:hover .btn-text{
+            color: var(--bs-light);
+        }
+
+        .btn-ghost-primary:hover .btn-text::before{
+            background-color: var(--bs-primary);
+            border: solid 4px var(--bs-primary-dark);
+        }
+
+.cls-1{
+    fill: var(--bs-light);
+}
+
+/* logo transition */
+    .navbar-brand{
+        transition: ease all 1s;
+    }
+
+    .navbar-brand.enlarge{
+        width: 50px;
+    }
+
+    .navbar-brand:not(.enlarge){
+        width: 150px;
+    }
+
+.pb-50px{
+    padding-bottom: 170px !important;
+}
+
+a#logoLink{
+    font-family: 'Senmoly Caligan', serif;
+}
+
+li.nav-item a.nav-link{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.h3{
+    text-transform: uppercase;
+}
+
+
+/* slick carousel styling */
+
+carouselHolder{
+    padding: 25px;
+}
+
+.carousel-1 div{
+    width: 100%;
+}
+
+.carousel-1 img{
+    height: 60vh;
+    object-fit: cover;
+    width: 100%;
+    border: solid white 1.5rem;
+    border-radius: 25px;
+}
+
+.slick-slide {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+/* dot colors */
+.slick-dots li button:before{
+        color: var(--bs-light);
+        opacity: 1;
+    }
+
+    .slick-dots li.slick-active button:before{
+        color: var(--bs-secondary);
+    }
+
+  .display-2{
+    font-family: 'Senmoly Caligan', serif;
+  }
+
+/* active underline */
+@media screen and (min-width: 992px) {
+    nav li:hover{
+        border-bottom: solid 4px white;
+        filter: blur(4px);
+    }
+    
+    /* .active::after{
+        content: "";
+        display: block;
+        position:relative;
+        background-color: var(--bs-light);
+        width: 100%;
+        height: 6px;
+        filter: blur(1px);
+        border-radius: 3px;
+    } */
+}
+
+/* header styles */
+.navbar-collapse{
+    flex-grow: 0;
+    flex-basis: 60% !important;
+}
+
+/* footer styles */
+footer img{
+    width: auto;
+}
+
+
+/* animation */
+.navbar-brand{
+    animation: scroll-logo;
+    animation-duration: 2ms;
+    animation-timeline: scroll(y);
+}
+
+@scroll-logo{
+    to { width: 50px; }
+}
+
+.hide{
+    
+}
+
+.btn-primary{
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    border: solid 4px var(--bs-primary);
+    border-radius: 25px;
+    -webkit-box-shadow: -1px 0px 24px 24px var(--bs-primary); 
+    box-shadow: -1px 0px 24px 24px var(--bs-primary);
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--bs-primary);
+    box-shadow: none;
+    border: solid 4px var(--bs-primary);
+}
+
+.btn-primary:focus{
+    border: solid 4px var(--bs-primary-dark);
+}
+
+.btn-primary:active{
+    background-color: var(--bs-primary-dark);
+}
