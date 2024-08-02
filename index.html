@@ -7,13 +7,14 @@
 
     <link href="css/reset.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
     <!-- Above the fold red section -->
-    <div class="bg-primary text-light vh-100 d-flex flex-column justify-content-between">
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid align-items-start justify-content-between">
               <a class="navbar-brand link-light logo-size" id="logoLink" href="index.html">
@@ -21,13 +22,12 @@
                     <path class="cls-1" d="M638.93,117.48h-281.83c36.46,33.58,58.03,82.64,58.03,141.1v330.62c0,75.44-30.13,139.61-80.04,183.19h284.87c173.44,0,280.04-130.08,280.04-339.65,0-197.83-96.66-315.27-261.07-315.27ZM604.6,752.53h-21.68V239.43c0-46.97-19.87-83.11-53.3-103.88h78.59c51.49,0,85.82,123.76,85.82,305.33s-36.14,311.65-89.43,311.65Z"/>
                     <path class="cls-1" d="M93.95,119.47v18.97c38.84,0,65.04,23.49,65.04,57.81v453.47c0,54.2-23.49,90.33-63.23,90.33-42.46,0-76.78-38.84-76.78-94.85H0c0,82.21,69.56,137.31,166.21,137.31,115.63,0,198.73-77.69,198.73-193.31v-330.62c0-83.11-55.1-139.11-139.11-139.11H93.95Z"/>
                 </svg>
-                <br>
-                Joryn Designs
+                <div class="nav-title">Joryn Designs</div>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon logo-size-toggler"></span>
               </button>
-              <div class="collapse navbar-collapse flex-lg-row align-items-center justify-content-lg-center vw-50" id="navbarNav">
+              <div class="collapse navbar-collapse flex-lg-row align-items-center justify-content-lg-center mw-60" id="navbarNav">
                 <ul class="navbar-nav text-center align-items-lg-end justify-content-lg-around flex-grow-1">
                   <li class="nav-item h3">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -42,9 +42,11 @@
               </div>
             </div>
           </nav>
+    </header>
+    <div class="bg-primary text-light vh-100 d-flex flex-column justify-content-end">
         <!-- add image carousel -->
-        <div class="carouselHolder overflow-hidden vh-60">
-            <div class="carousel-1 h-100 container-fluid d-flex align-items-center justify-content-end ml-auto">
+        <div class="carouselHolder overflow-hidden container-fluid">
+            <div class="carousel-1 container d-flex align-items-center justify-content-center">
                 <div class="carouselItem">
                     <img class="" src="images/portfolioItem1.jpg" alt="portrait photo with blue and pink highlights">
                 </div>
@@ -63,25 +65,45 @@
         </div>
     </div>
     <main>
-        <section id="bento" class="position-relative overflow-hidden py-6 py-lg-8 min-vh-100"><!-- You can change the max height of all cards -->
-            <style> 	.bento_simple > [class^='col-'] { max-height: 24rem;}  </style>
-        
-            <div class="container position-relative">
-                <div class="row bg-light bg-opacity-75 position-relative bento_simple g-4 mw-lg-8 mx-2rem d-flex flex-wrap flex-row h-auto py-4">
-                    <div class="col-lg-12 col-sm-12">
-                        <div class="lc-block h-100 mx-auto col-md-auto mw-md-2 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex gap-3 flex-sm-column flex-lg-row">
-                            <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3 col-lg-6" style="min-height:6rem;isolation: isolate;">
-                                <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Nathan Truong" style="mix-blend-mode:screen;">
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="lc-block pt-2 h-100">
-                                    <div class="h-100 d-flex flex-column gap-2 justify-content-between">
-                                        <div class="articleText">
-                                            <h3 class="mb-3 display-2 text-tertiary">Hi, I'm Joryn</h3>
-                                            <p class="">I am a student in Ottawa passionate about design, with a love for cameras and making interesting stuff!</p>
+        <section id="bento" class="position-relative overflow-hidden py-6 py-lg-8 min-vh-100 bg-transparent w-100 pb-50px"><!-- You can change the max height of all cards -->
+            <style> 	.bento_simple > [class^='col-'] { max-height: none;}  </style>
+            <div class="w-100 bg-light">
+                <div class="container position-relative h-100">
+                    <div class="row bg-light bg-opacity-75 position-relative bento_simple g-4 mw-lg-8 mx-2rem d-flex flex-wrap flex-row h-auto py-4 min-vh-100 justify-content-between">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="lc-block h-100 mx-auto col-md-auto mw-md-2 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex gap-3 flex-sm-column flex-lg-row">
+                                <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3 col-lg-6" style="min-height:6rem;isolation: isolate;">
+                                    <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1596328546171-77e37b5e8b3d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8Mnx8fDE3MTA0MjAyNDR8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Nathan Truong" style="mix-blend-mode:screen;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="lc-block pt-2 h-100">
+                                        <div class="h-100 d-flex flex-column gap-2 justify-content-between">
+                                            <div class="articleText">
+                                                <h3 class="mb-3 display-2 text-tertiary">Hi, I'm Joryn</h3>
+                                                <p class="">I am a student in Ottawa passionate about design, with a love for cameras and making interesting stuff!</p>
+                                            </div>
+                                            <div class="articleButton">
+                                                <a class="button btn-tertiary w-100" role="button" href="about.html">
+                                                    <div class="btn-text">Button</div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="articleButton">
-                                            <a class="button btn-tertiary w-100" role="button" href="about.html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="lc-block h-100 mx-auto mw-md-1 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                                <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3" style="min-height:6rem;isolation: isolate;">
+                                    <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by USGS" style="mix-blend-mode:screen;">
+                                </div>
+                                <div>
+            
+                                    <div class="lc-block pt-2">
+                                        <div>
+                                            <h3 class="mb-3 display-2 text-primary">My Work</h3>
+                                            <p class="">Today I am really excited to display my work and share what I have become passionate about this past year.</p>
+                                            <a class="button btn-ghost-primary w-100" role="button" href="work.html">
                                                 <div class="btn-text">Button</div>
                                             </a>
                                         </div>
@@ -89,40 +111,21 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="lc-block h-100 mx-auto mw-md-1 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
-                            <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3" style="min-height:6rem;isolation: isolate;">
-                                <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by USGS" style="mix-blend-mode:screen;">
-                            </div>
-                            <div>
-        
-                                <div class="lc-block pt-2">
-                                    <div>
-                                        <h3 class="mb-3 display-2 text-primary">My Work</h3>
-                                        <p class="">Today I am really excited to display my work and share what I have become passionate about this past year.</p>
-                                        <a class="button btn-ghost-primary w-100" role="button" href="work.html">
-                                            <div class="btn-text">Button</div>
-                                        </a>
-                                    </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="lc-block h-100 mx-auto mw-md-1 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                                <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3" style="min-height:6rem;isolation: isolate;">
+                                    <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by USGS" style="mix-blend-mode:screen;">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="lc-block h-100 mx-auto mw-md-1 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
-                            <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3" style="min-height:6rem;isolation: isolate;">
-                                <img class="img-fluid rounded-2 object-fit-cover w-100" src="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1574169207372-88518bd26f2d?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1574169207372-88518bd26f2d??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=webp&amp;ixid=M3wzNzg0fDB8MXxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfHx8MTcxMDQyMDI1NXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by USGS" style="mix-blend-mode:screen;">
-                            </div>
-                            <div>
-        
-                                <div class="lc-block pt-2">
-                                    <div>
-                                        <h3 class="display-2 mb-3 text-primary">My Blog</h3>
-                                        <p class="">Another thing I am excited to share is my blog - a series of posts on a variety of topics that interest me.</p>
-                                        <a class="button btn-ghost-primary w-100" role="button" href="#">
-                                            <div class="btn-text">Button</div>
-                                        </a> 
+                                <div>
+            
+                                    <div class="lc-block pt-2">
+                                        <div>
+                                            <h3 class="display-2 mb-3 text-primary">My Blog</h3>
+                                            <p class="">Another thing I am excited to share is my blog - a series of posts on a variety of topics that interest me.</p>
+                                            <a class="button btn-ghost-primary w-100" role="button" href="#">
+                                                <div class="btn-text">Button</div>
+                                            </a> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +135,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-primary">
+    <footer class="bg-primary fixed-bottom z-n1">
         <div class="container text-light py-2">
             <div class="row">
                 <ul class="col-6">
@@ -169,8 +172,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
