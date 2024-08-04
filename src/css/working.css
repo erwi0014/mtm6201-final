@@ -252,12 +252,15 @@ footer img{
 
 /* animation */
 .navbar-brand{
-    animation: scroll-logo;
+    animation-name: scroll-logo;
     animation-duration: 2ms;
-    animation-timeline: scroll(y);
+    animation-iteration-count: infinite;
 }
 
 @scroll-logo{
+    from {
+        width: auto;
+    }
     to { width: 50px; }
 }
 

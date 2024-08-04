@@ -20,30 +20,47 @@ $tertiary: #9764c7;
     overscroll-behavior: contain;
 }
 
-/* fonts */
-@font-face {
-    font-family: "Senmoly Caligan";
-    src: url("/fonts/SenmolyCaligan.otf");
-}
+/* fonts and text */
+    @font-face {
+        font-family: "Senmoly Caligan";
+        src: url("/src/fonts/SenmolyCaligan.otf");
+    }
 
-@font-face {
-    font-family: "Space Grotesk";
-    src: url("/fonts/SpaceGrotesk.ttf");
-}
+    @font-face {
+        font-family: "Space Grotesk";
+        src: url("/src/fonts/SpaceGrotesk.ttf");
+    }
 
-.text-tertiary{
-    color: $tertiary;
-}
+    .text-tertiary{
+        color: $tertiary;
+    }
+
+    .display-2{
+        font-family: 'Senmoly Caligan', serif;
+    }
+
+    a#logoLink{
+        font-family: 'Senmoly Caligan', serif;
+    }
+
+    li.nav-item a.nav-link{
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .h3{
+        text-transform: uppercase;
+    }
+
+    .nav-title{
+        font-size: 2rem;
+    }
+
+    .cls-1{
+        fill: $light;
+    }
 
 img{
     width: 100%;
-}
-
-/* buttons */
-
-
-.cls-1{
-    fill: $light;
 }
 
 /* logo transition */
@@ -62,19 +79,6 @@ img{
 .pb-50px{
     padding-bottom: 170px !important;
 }
-
-a#logoLink{
-    font-family: 'Senmoly Caligan', serif;
-}
-
-li.nav-item a.nav-link{
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.h3{
-    text-transform: uppercase;
-}
-
 
 /* slick carousel styling */
 
@@ -109,18 +113,16 @@ carouselHolder{
         color: $secondary;
     }
 
-  .display-2{
-    font-family: 'Senmoly Caligan', serif;
-  }
+
 
 /* active underline */
 @media screen and (min-width: 992px) {
-    nav li:hover{
+    /*nav li:hover{
         border-bottom: solid 4px white;
         filter: blur(4px);
-    }
+    }*/
     
-    /* .active::after{
+    .active::after{
         content: "";
         display: block;
         position:relative;
@@ -129,13 +131,15 @@ carouselHolder{
         height: 6px;
         filter: blur(1px);
         border-radius: 3px;
-    } */
+    }
 }
 
 /* header styles */
-.navbar-collapse{
-    flex-grow: 0;
-    flex-basis: 60% !important;
+@media screen and (min-width: 992px) {
+    .navbar-collapse{
+        flex-grow: 0;
+        flex-basis: 60% !important;
+    }
 }
 
 /* footer styles */
@@ -145,41 +149,60 @@ footer img{
 
 
 /* animation */
-.navbar-brand{
-    animation: scroll-logo;
-    animation-duration: 2ms;
-    animation-timeline: scroll(y);
-}
+    /*.navbar-brand{
+        animation-name: scroll-logo;
+        animation-duration: 2ms;
+        animation-iteration-count: infinite;
+    }
 
-@scroll-logo{
-    to { width: 50px; }
-}
+    @scroll-logo{
+        from {
+            width: auto;
+        }
+        to { 
+            width: 50px;
+        }
+    } */
 
-.hide{
     
-}
+
+    @media (min-width: 992px) {
+        .nav-title {
+            display: block !important; /* Override any .hide class */
+        }
+    }
+    
+    .hide{
+        transition: scale 200ms;
+        transition: all 300ms;
+
+        transform: scale(0.1);
+        opacity: 0;
+        position: absolute;
+        filter: blur(3px);
+    } 
 
 // button stlying
 
-.btn{
-    border-radius: 25px;
-    border: solid 4px;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-}
+    .btn{
+        border-radius: 25px;
+        border: solid 4px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.5rem;
+    }
 
-.btn-primary{
-    border: solid 4px;
-    -webkit-box-shadow: -1px 0px 24px 24px $primary; 
-    box-shadow: -1px 0px 14px 12px $primary;
-    margin: 1.5rem 0;
-}
+    .btn-primary{
+        border: solid 4px;
+        -webkit-box-shadow: -1px 0px 24px 24px $primary; 
+        box-shadow: -1px 0px 14px 12px $primary;
+        margin: 1.5rem 0;
+    }
 
-.btn-primary:hover, .btn-primary:focus{
-    box-shadow: none;
-    border: solid 4px;
-}
+    .btn-primary:hover, .btn-primary:focus{
+        box-shadow: none;
+        border: solid 4px;
+    }
 
-.btn-primary:focus{
-    border: solid 4px;
-}
+    .btn-primary:focus{
+        border: solid 4px;
+    }
