@@ -173,19 +173,51 @@ $tertiary: #9764c7;
     .navbar-brand{
         transition: ease all 1s;
         position: absolute;
+        top: 1rem;
+        left: 1rem;
     }
 
     .navbar-brand.shrink{
-        width: 50px;
+        width: 3.125rem;
     }
 
     .navbar-brand:not(.shrink){
         width: 15rem;
+        max-width: 50vw;
+    }
+
+    .nav-item{
+        min-height: 50px;
+    }
+
+    nav{
+        min-height: 86px;
+    }
+
+    @media screen and (min-width: 992px) {
+        nav{
+            min-height: 140px;
+        }
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .navbar-collapse.show ul{
+        margin-top: 50px;
+    }
+
+    .navbar-collapse.collapsing ul{
+        margin-top: 50px;
     }
 
     .pb-170px{
     padding-bottom: 170px !important;
     }
+
     .mb-170px{
     margin-bottom: 170px !important;
     }
