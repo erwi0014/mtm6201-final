@@ -6,12 +6,12 @@ let isScrolled = false;
 
 function setLogoSize(large) {
     if (large) {
-        logoSize.classList.remove('enlarge');
+        logoSize.classList.remove('shrink');
         if (window.innerWidth < 992) {
             navTitle.classList.remove('hide');
         }
     } else {
-        logoSize.classList.add('enlarge');
+        logoSize.classList.add('shrink');
         if (window.innerWidth < 992) {
             navTitle.classList.add('hide');
         }
@@ -55,11 +55,14 @@ $(document).ready(function(){
     $('.carousel-1').slick({
         dots: true,
         arrows:true,
+        adaptiveHeight:true,
+        autoplay:true,
+        respondTo:'slider',
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false
+                    arrows: false,
                 }
             }
         ]

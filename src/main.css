@@ -12028,11 +12028,6 @@ img {
   height: 50vh;
 }
 
-.decor-img {
-  border: solid white 1.5rem;
-  border-radius: 25px;
-}
-
 #bg-container {
   padding-top: 118px;
 }
@@ -12107,14 +12102,15 @@ footer img {
 /* logo transition */
 .navbar-brand {
   transition: ease all 1s;
+  position: absolute;
 }
 
-.navbar-brand.enlarge {
+.navbar-brand.shrink {
   width: 50px;
 }
 
-.navbar-brand:not(.enlarge) {
-  width: 150px;
+.navbar-brand:not(.shrink) {
+  width: 15rem;
 }
 
 .pb-170px {
@@ -12126,23 +12122,8 @@ footer img {
 }
 
 /* slick carousel styling */
-carouselHolder {
-  padding: 25px;
-}
-
-.carousel-1 div {
-  width: 100%;
-}
-
-.carousel-1 img {
-  height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
 .slick-slide {
-  padding: 1rem;
+  padding: 2rem;
   margin: 2rem;
 }
 
