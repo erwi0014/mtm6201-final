@@ -31,12 +31,30 @@ $tertiary: #9764c7;
         src: url("/src/fonts/SpaceGrotesk.ttf");
     }
 
-    .text-tertiary{
-        color: $tertiary;
+    p{
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .h1{
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .h2{
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .h3{
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
     }
 
     .display-2{
         font-family: 'Senmoly Caligan', serif;
+    }
+
+    .text-tertiary{
+        color: $tertiary;
     }
 
     a#logoLink{
@@ -47,23 +65,111 @@ $tertiary: #9764c7;
         font-family: 'Space Grotesk', sans-serif;
     }
 
-    .h3{
-        text-transform: uppercase;
-    }
-
     .nav-title{
         font-size: 2rem;
+    }
+
+// other site wide styles
+    img{
+        width: 100%;
     }
 
     .cls-1{
         fill: $light;
     }
 
-img{
-    width: 100%;
-}
+    .vh-50{
+        height: 50vh;
+    }
 
-/* logo transition */
+    .decor-img{
+        border: solid white 1.5rem;
+        border-radius: 25px;
+    }
+
+    #bg-container{
+        padding-top: 118px;
+    }
+
+    /* extra padding and active underline */
+    @media screen and (min-width: 992px) {
+        /*nav li:hover{
+            border-bottom: solid 4px white;
+        }*/
+        
+        #bg-container{
+            padding-top: 180px;
+        }
+
+        .active::after{
+            content: "";
+            display: block;
+            position:relative;
+            background-color: var(--bs-light);
+            width: 100%;
+            height: 6px;
+            filter: blur(1px);
+            border-radius: 3px;
+        }
+    }
+
+    /* header styles */
+    @media screen and (min-width: 992px) {
+        .navbar-collapse{
+            flex-grow: 0;
+            flex-basis: 60% !important;
+        }
+    }
+
+    /* footer styles */
+    footer img{
+        width: auto;
+    }
+
+        @media (min-width: 992px) {
+            .nav-title {
+                display: block !important; /* Override any .hide class */
+            }
+        }
+        
+        .hide{
+            transition: scale 200ms;
+            transition: all 300ms;
+
+            transform: scale(0.1);
+            opacity: 0;
+            position: absolute;
+            filter: blur(3px);
+        } 
+
+    // button stlying
+
+        .btn{
+            border-radius: 25px;
+            border: solid 4px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .btn-primary{
+            border: solid 4px;
+            -webkit-box-shadow: -1px 0px 24px 24px $primary; 
+            box-shadow: -1px 0px 14px 12px $primary;
+            margin: 1.5rem 0;
+        }
+
+        .btn-primary:hover, .btn-primary:focus{
+            box-shadow: none;
+            border: solid 4px;
+        }
+
+        .btn-primary:focus{
+            border: solid 4px;
+        }
+
+// home page specific
+
+    /* logo transition */
     .navbar-brand{
         transition: ease all 1s;
     }
@@ -76,133 +182,50 @@ img{
         width: 150px;
     }
 
-.pb-50px{
+    .pb-170px{
     padding-bottom: 170px !important;
-}
-
-/* slick carousel styling */
-
-carouselHolder{
-    padding: 25px;
-}
-
-.carousel-1 div{
-    width: 100%;
-}
-
-.carousel-1 img{
-    height: 60vh;
-    object-fit: cover;
-    width: 100%;
-    border: solid white 1.5rem;
-    border-radius: 25px;
-}
-
-.slick-slide {
-    padding: 1rem;
-    margin: 2rem;
-}
-
-/* dot colors */
-.slick-dots li button:before{
-        color: $light;
-        opacity: 1;
+    }
+    .mb-170px{
+    margin-bottom: 170px !important;
     }
 
-    .slick-dots li.slick-active button:before{
-        color: $secondary;
+    /* slick carousel styling */
+
+    carouselHolder{
+        padding: 25px;
     }
 
-
-
-/* active underline */
-@media screen and (min-width: 992px) {
-    /*nav li:hover{
-        border-bottom: solid 4px white;
-        filter: blur(4px);
-    }*/
-    
-    .active::after{
-        content: "";
-        display: block;
-        position:relative;
-        background-color: var(--bs-light);
+    .carousel-1 div{
         width: 100%;
-        height: 6px;
-        filter: blur(1px);
-        border-radius: 3px;
-    }
-}
-
-/* header styles */
-@media screen and (min-width: 992px) {
-    .navbar-collapse{
-        flex-grow: 0;
-        flex-basis: 60% !important;
-    }
-}
-
-/* footer styles */
-footer img{
-    width: auto;
-}
-
-
-/* animation */
-    /*.navbar-brand{
-        animation-name: scroll-logo;
-        animation-duration: 2ms;
-        animation-iteration-count: infinite;
     }
 
-    @scroll-logo{
-        from {
-            width: auto;
+    .carousel-1 img{
+        height: 60vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .slick-slide {
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    /* dot colors */
+    .slick-dots li button:before{
+            color: $light;
+            opacity: 1;
         }
-        to { 
-            width: 50px;
+
+        .slick-dots li.slick-active button:before{
+            color: $secondary;
         }
-    } */
 
-    
-
-    @media (min-width: 992px) {
-        .nav-title {
-            display: block !important; /* Override any .hide class */
-        }
+// about page specific styles
+    #mission-title{
+        background: url("/src/images/about-page/mission.jpg") center no-repeat;
+        background-size: cover;
     }
-    
-    .hide{
-        transition: scale 200ms;
-        transition: all 300ms;
-
-        transform: scale(0.1);
-        opacity: 0;
-        position: absolute;
-        filter: blur(3px);
-    } 
-
-// button stlying
-
-    .btn{
-        border-radius: 25px;
-        border: solid 4px;
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 1.5rem;
+    #mission-title h2{
+        height: fit-content;
     }
 
-    .btn-primary{
-        border: solid 4px;
-        -webkit-box-shadow: -1px 0px 24px 24px $primary; 
-        box-shadow: -1px 0px 14px 12px $primary;
-        margin: 1.5rem 0;
-    }
-
-    .btn-primary:hover, .btn-primary:focus{
-        box-shadow: none;
-        border: solid 4px;
-    }
-
-    .btn-primary:focus{
-        border: solid 4px;
-    }

@@ -11978,12 +11978,30 @@ textarea.form-control-lg {
   font-family: "Space Grotesk";
   src: url("/src/fonts/SpaceGrotesk.ttf");
 }
-.text-tertiary {
-  color: #9764c7;
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.h1 {
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.h2 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.h3 {
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .display-2 {
   font-family: "Senmoly Caligan", serif;
+}
+
+.text-tertiary {
+  color: #9764c7;
 }
 
 a#logoLink {
@@ -11994,78 +12012,39 @@ li.nav-item a.nav-link {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.h3 {
-  text-transform: uppercase;
-}
-
 .nav-title {
   font-size: 2rem;
-}
-
-.cls-1 {
-  fill: #f6f7eb;
 }
 
 img {
   width: 100%;
 }
 
-/* logo transition */
-.navbar-brand {
-  transition: ease all 1s;
+.cls-1 {
+  fill: #f6f7eb;
 }
 
-.navbar-brand.enlarge {
-  width: 50px;
+.vh-50 {
+  height: 50vh;
 }
 
-.navbar-brand:not(.enlarge) {
-  width: 150px;
-}
-
-.pb-50px {
-  padding-bottom: 170px !important;
-}
-
-/* slick carousel styling */
-carouselHolder {
-  padding: 25px;
-}
-
-.carousel-1 div {
-  width: 100%;
-}
-
-.carousel-1 img {
-  height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+.decor-img {
   border: solid white 1.5rem;
   border-radius: 25px;
 }
 
-.slick-slide {
-  padding: 1rem;
-  margin: 2rem;
+#bg-container {
+  padding-top: 118px;
 }
 
-/* dot colors */
-.slick-dots li button:before {
-  color: #f6f7eb;
-  opacity: 1;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #ffcc38;
-}
-
-/* active underline */
+/* extra padding and active underline */
 @media screen and (min-width: 992px) {
   /*nav li:hover{
       border-bottom: solid 4px white;
-      filter: blur(4px);
   }*/
+  #bg-container {
+    padding-top: 180px;
+  }
   .active::after {
     content: "";
     display: block;
@@ -12089,21 +12068,6 @@ footer img {
   width: auto;
 }
 
-/* animation */
-/*.navbar-brand{
-    animation-name: scroll-logo;
-    animation-duration: 2ms;
-    animation-iteration-count: infinite;
-}
-
-@scroll-logo{
-    from {
-        width: auto;
-    }
-    to { 
-        width: 50px;
-    }
-} */
 @media (min-width: 992px) {
   .nav-title {
     display: block !important; /* Override any .hide class */
@@ -12138,4 +12102,66 @@ footer img {
 
 .btn-primary:focus {
   border: solid 4px;
+}
+
+/* logo transition */
+.navbar-brand {
+  transition: ease all 1s;
+}
+
+.navbar-brand.enlarge {
+  width: 50px;
+}
+
+.navbar-brand:not(.enlarge) {
+  width: 150px;
+}
+
+.pb-170px {
+  padding-bottom: 170px !important;
+}
+
+.mb-170px {
+  margin-bottom: 170px !important;
+}
+
+/* slick carousel styling */
+carouselHolder {
+  padding: 25px;
+}
+
+.carousel-1 div {
+  width: 100%;
+}
+
+.carousel-1 img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.slick-slide {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+/* dot colors */
+.slick-dots li button:before {
+  color: #f6f7eb;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffcc38;
+}
+
+#mission-title {
+  background: url("/src/images/about-page/mission.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#mission-title h2, #mission-title .h2 {
+  height: -moz-fit-content;
+  height: fit-content;
 }
