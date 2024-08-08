@@ -11,7 +11,7 @@
         <link href="main.css" rel="stylesheet">
     </head>
 <body>
-    <header class="fixed-top">
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid align-items-start justify-content-end">
               <a class="navbar-brand link-light logo-size shrink" id="logoLink" href="index.html">
@@ -21,6 +21,7 @@
                 </svg>
                 <div class="nav-title d-none d-lg-block">Joryn Designs</div>
               </a>
+              <h1 class="h1 text-light d-none d-md-block d-lg-none position-absolute py-2" id="tabletTitle">About</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px;">
                 <span class="navbar-toggler-icon logo-size-toggler"></span>
               </button>
@@ -43,9 +44,9 @@
 
     <main>
         <div class="mb-170px bg-light" id="bg-container">
-            <h1 class="container h1 text-primary d-lg-none">About</h1>
-            <section id="joryn">
-                <div class="container my-2 py-4">
+            <h1 class="container h1 text-primary d-md-none">About</h1>
+            <section id="joryn" class="vh-100 d-flex justify-content-center align-items-center">
+                <div class="container my-2 py-4 h-auto">
                     <div class="row">
                         <div class="col-md-6">
                             <img class="decor-img object-fit-contain" src="/src/images/about-page/profile.png">
@@ -58,7 +59,7 @@
                     </div>
                 </div>
             </section>
-            <section id="mission">
+            <section id="mission" class="vh-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="h2 w-100 vh-50 d-flex align-items-center" id="mission-title">
                     <h2 class="display-2 text-center w-100 text-light">Mission</h2>
                 </div>
@@ -68,7 +69,7 @@
                     </p>
                 </div>
             </section>
-            <section id="about">
+            <section id="about" class="vh-100 d-flex justify-content-center align-items-center">
                 <div class="container my-2 py-4">
                     <div class="row">
                         <div class="col-md-6">

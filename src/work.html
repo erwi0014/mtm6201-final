@@ -11,7 +11,7 @@
         <link href="main.css" rel="stylesheet">
     </head>
 <body>
-    <header class="fixed-top">
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid align-items-start justify-content-end">
               <a class="navbar-brand link-light logo-size shrink" id="logoLink" href="index.html">
@@ -21,6 +21,7 @@
                 </svg>
                 <div class="nav-title d-none d-lg-block">Joryn Designs</div>
               </a>
+              <h1 class="h1 text-light d-none d-md-block d-lg-none position-absolute py-2" id="tabletTitle">Work</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px;">
                 <span class="navbar-toggler-icon logo-size-toggler"></span>
               </button>
@@ -42,7 +43,7 @@
     </header>
     <main>
         <div class="mb-170px bg-light pb-5" id="bg-container">
-            <h1 class="container h1 text-primary d-lg-none">Work</h1>
+            <h1 class="container h1 text-primary d-md-none">Work</h1>
             <article class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row gap-sm-5 gap-md-0">
@@ -57,8 +58,15 @@
                         <a href="#" class="btn btn-secondary w-100 d-md-none">More</a>
                     </div>
                 </div>
+                <div class="text-center p-5">
+                    <a href="#graphicsArticle">
+                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 2.86737L13 12.8674L3 2.86737" stroke="var(--bs-secondary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
             </article>
-            <article class="portfolio-item d-flex flex-column justify-content-center">
+            <article id="graphicsArticle" class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row">
                         <div class="col-md-6 d-flex flex-column gap-2">
@@ -72,8 +80,15 @@
                         <a href="#" class="btn btn-secondary w-100 d-md-none">More</a>
                     </div>
                 </div>
+                <div class="text-center p-5">
+                    <a href="#webArticle">
+                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 2.86737L13 12.8674L3 2.86737" stroke="var(--bs-secondary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
             </article>
-            <article class="portfolio-item d-flex flex-column justify-content-center">
+            <article id="webArticle" class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row">
                         <div class="col-md-6 d-flex flex-column gap-2">
@@ -138,5 +153,6 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

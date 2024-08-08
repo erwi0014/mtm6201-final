@@ -12058,6 +12058,12 @@ img {
     flex-basis: 60% !important;
   }
 }
+#tabletTitle {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* footer styles */
 footer img {
   width: auto;
