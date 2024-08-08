@@ -12121,12 +12121,12 @@ footer img {
 }
 
 nav {
-  min-height: 86px;
+  min-height: 92px;
 }
 
 @media screen and (min-width: 992px) {
   nav {
-    min-height: 140px;
+    min-height: 130px;
   }
 }
 .navbar-toggler {
@@ -12175,4 +12175,13 @@ nav {
 #mission-title h2, #mission-title .h2 {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.portfolio-item {
+  height: 70vh;
+  margin-bottom: 10rem;
+}
+
+.portfolio-item > div {
+  padding-bottom: 10vh;
 }
