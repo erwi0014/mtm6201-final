@@ -49,7 +49,17 @@
                 <div class="container my-2 py-4 h-auto">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="decor-img object-fit-contain" src="/src/images/about-page/profile.png">
+                            <img
+                                class="decor-img"
+                                srcset="images/about-page/profile-400w.avif 400w, images/about-page/profile-600w.avif 600w, images/about-page/profile-800w.avif 800w, images/about-page/profile-1000w.avif 1000w, images/about-page/profile-1200w.avif 1200w, images/about-page/profile-1600w.avif 1600w, images/about-page/profile-2000w.avif 2000w"
+                                sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
+                                src="images/about-page/profile.png"
+                                alt="portrait of Joryn Erwin"
+                                width="4010"
+                                height="4010"
+                                loading="lazy"
+                                style="max-width: 100%; height: auto;"
+                            />
                         </div>
                         <div class="col-md-6">
                             <h2 class="h2">Joryn</h2>
@@ -73,7 +83,18 @@
                 <div class="container my-2 py-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="decor-img" src="/src/images/about-page/values.jpg" id="values-img">
+                            <img
+                                class="decor-img"
+                                srcset="images/about-page/values-400w.avif 400w, images/about-page/values-600w.avif 600w, images/about-page/values-800w.avif 800w, images/about-page/values-1000w.avif 1000w, images/about-page/values-1200w.avif 1200w"
+                                sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+                                src="images/about-page/values.jpg"
+                                alt="portrait of Joryn Erwin"
+                                width="1365"
+                                height="1365"
+                                loading="lazy"
+                                id="values-img"
+                                style="max-width: 100%; height: auto;"
+                            />
                         </div>
                         <div class="col-md-6">
                             <h2 class="h2">Values</h2>
@@ -94,7 +115,7 @@
             </section>
         </div>
     </main>
-    <footer class="bg-primary fixed-bottom z-n1">
+    <footer class="bg-primary fixed-bottom z-n1 pt-5">
         <div class="container text-light py-2">
             <div class="row">
                 <ul class="col-6 d-flex flex-column justify-content-around">

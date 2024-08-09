@@ -12046,6 +12046,11 @@ img {
   height: 50vh;
 }
 
+.decor-img {
+  border: solid white 4px;
+  border-radius: 1rem;
+}
+
 #bg-container {
   padding-top: 118px;
 }
