@@ -8,6 +8,9 @@
         <link href="css/reset.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link href="main.css" rel="stylesheet">
     </head>
 <body>
@@ -48,7 +51,7 @@
             <section id="joryn" class="about-section d-flex justify-content-center align-items-center">
                 <div class="container my-2 py-4 h-auto">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right">
                             <img
                                 class="decor-img"
                                 srcset="images/about-page/profile-400w.avif 400w, images/about-page/profile-600w.avif 600w, images/about-page/profile-800w.avif 800w, images/about-page/profile-1000w.avif 1000w, images/about-page/profile-1200w.avif 1200w, images/about-page/profile-1600w.avif 1600w, images/about-page/profile-2000w.avif 2000w"
@@ -61,7 +64,7 @@
                                 style="max-width: 100%; height: auto;"
                             />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <h2 class="h2">Joryn</h2>
                             <p>Joryn Erwin is a creative designer and branding creator based in Ottawa, ON. Studying Interactive Media Design at Algonquin College, Joryn's expertise includes web design, user experience design, camera work, and web development. They approach every project with a creative vision, seeking to break away from traditional styles when necessary. </p>
                             <a href="#" type="button" class="btn btn-tertiary w-100">Contact</a>
@@ -74,7 +77,7 @@
                     <h2 class="display-2 text-center w-100 text-light">Mission</h2>
                 </div>
                 <div class="container">  
-                    <p class="text-center">
+                    <p class="text-center" data-aos="fade-up">
                         I strive to infuse every project with creativity, boldness, and a touch of nostalgia, ensuring that each design stands out and leaves a lasting impression.
                     </p>
                 </div>
@@ -82,7 +85,7 @@
             <section id="about" class="about-section d-flex justify-content-center align-items-center">
                 <div class="container my-2 py-4">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right">
                             <img
                                 class="decor-img"
                                 srcset="images/about-page/values-400w.avif 400w, images/about-page/values-600w.avif 600w, images/about-page/values-800w.avif 800w, images/about-page/values-1000w.avif 1000w, images/about-page/values-1200w.avif 1200w"
@@ -96,7 +99,7 @@
                                 style="max-width: 100%; height: auto;"
                             />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <h2 class="h2">Values</h2>
                             <p>
                                 No matter the project, I dedicate myself to:
@@ -166,6 +169,13 @@
     <script src="/src/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

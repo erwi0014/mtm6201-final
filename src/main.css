@@ -12071,6 +12071,9 @@ img {
   nav li .active::after {
     opacity: 100;
   }
+  body {
+    font-size: 19px;
+  }
 }
 /* header styles */
 @media screen and (min-width: 992px) {

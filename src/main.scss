@@ -156,6 +156,11 @@ $btn-active-border-tint-amount:   10%;
         nav li .active::after{
             opacity: 100;
         }
+
+        // and change font size
+        body{
+            font-size: 19px;
+        }
     }
 
     /* header styles */

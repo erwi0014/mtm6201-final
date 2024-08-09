@@ -8,6 +8,9 @@
         <link href="css/reset.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/> 
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link href="main.css" rel="stylesheet">
     </head>
 <body>
@@ -47,12 +50,12 @@
             <article class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row gap-sm-5 gap-md-0">
-                        <div class="col-md-6 d-flex flex-column gap-2">
+                        <div class="col-md-6 d-flex flex-column gap-2" data-aos="fade-right">
                             <h2 class="h2">Photography</h2>
                             <p>Capturing compelling and vibrant images that tell a story and evoke emotion.</p>
                             <a href="#" class="btn btn-secondary w-100 d-none d-md-block mt-auto">More</a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <img
                                 srcset="images/work-page/work-1-400w.avif 400w, images/work-page/work-1-600w.avif 600w, images/work-page/work-1-800w.avif 800w, images/work-page/work-1-1000w.avif 1000w, images/work-page/work-1-1200w.avif 1200w, images/work-page/work-1-1600w.avif 1600w, images/work-page/work-1-2000w.avif 2000w"
                                 sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
@@ -78,12 +81,12 @@
             <article id="graphicsArticle" class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row gap-sm-5 gap-md-0">
-                        <div class="col-md-6 d-flex flex-column gap-2">
+                        <div class="col-md-6 d-flex flex-column gap-2" data-aos="fade-right">
                             <h2 class="h2">Graphics</h2>
                             <p>Unique and creative graphics for all applications.</p>
                             <a href="#" class="btn btn-secondary w-100 d-none d-md-block mt-auto">More</a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <img
                                 srcset="images/work-page/work-2-400w.avif 400w, images/work-page/work-2-600w.avif 600w, images/work-page/work-2-800w.avif 800w, images/work-page/work-2-1000w.avif 1000w, images/work-page/work-2-1200w.avif 1200w, images/work-page/work-2-1600w.avif 1600w, images/work-page/work-2-2000w.avif 2000w"
                                 sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
@@ -109,12 +112,12 @@
             <article id="webArticle" class="portfolio-item d-flex flex-column justify-content-center">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row gap-sm-5 gap-md-0">
-                        <div class="col-md-6 d-flex flex-column gap-2">
+                        <div class="col-md-6 d-flex flex-column gap-2" data-aos="fade-right">
                             <h2 class="h2">Web Building</h2>
                             <p>Turning ideas into interactive, responsive websites.</p>
                             <a href="#" class="btn btn-secondary w-100 d-none d-md-block mt-auto">More</a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-left">
                             <img
                                 srcset="images/work-page/work-3-400w.avif 400w, images/work-page/work-3-600w.avif 600w, images/work-page/work-3-800w.avif 800w, images/work-page/work-3-1000w.avif 1000w, images/work-page/work-3-1200w.avif 1200w, images/work-page/work-3-1600w.avif 1600w, images/work-page/work-3-2000w.avif 2000w"
                                 sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
@@ -180,6 +183,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="/src/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
