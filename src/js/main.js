@@ -56,16 +56,9 @@ $(document).ready(function(){
         dots: true,
         arrows:true,
         adaptiveHeight:true,
-        autoplay:true,
+        // autoplay:true,
         respondTo:'slider',
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
+        
     });
   });
   

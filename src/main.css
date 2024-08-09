@@ -2948,7 +2948,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: calc(1.275rem + 0.3vw);
   --bs-btn-font-weight: 800;
   --bs-btn-line-height: 22px;
-  --bs-btn-color: #ffffff;
+  --bs-btn-color: var(--bs-body-color);
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 4px;
   --bs-btn-border-color: transparent;
@@ -12137,6 +12137,10 @@ footer img {
   border: solid 4px #5d2016;
 }
 
+#bento {
+  scroll-margin-top: 130px;
+}
+
 /* logo transition */
 .navbar-brand {
   transition: ease all 1s;
@@ -12150,7 +12154,7 @@ footer img {
 }
 
 .navbar-brand:not(.shrink) {
-  width: 15rem;
+  width: 8rem;
   max-width: 50vw;
 }
 
@@ -12189,12 +12193,12 @@ nav {
   margin-bottom: 170px !important;
 }
 
-/* slick carousel styling */
-.slick-slide {
-  padding: 2rem;
-  margin: 2rem;
+.m-vw-lg-50 {
+  max-width: 80vh;
+  max-height: 80vh;
 }
 
+/* slick carousel styling */
 /* dot colors */
 .slick-dots li button:before {
   color: #f6f7eb;
@@ -12241,4 +12245,12 @@ nav {
 
 .portfolio-item:last-child div {
   border-bottom: none !important;
+}
+
+#graphicsArticle {
+  scroll-margin-top: 10rem;
+}
+
+#webArticle {
+  scroll-margin-top: 10rem;
 }
