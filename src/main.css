@@ -12093,18 +12093,12 @@ footer img {
   width: auto;
 }
 
-@media (min-width: 992px) {
-  .nav-title {
-    display: block !important; /* Override any .hide class */
-  }
-}
 .hide {
   transition: scale 200ms;
   transition: all 300ms;
   transform: scale(0.1);
   opacity: 0;
   position: absolute;
-  filter: blur(3px);
 }
 
 .btn {
@@ -12173,6 +12167,10 @@ nav {
   nav {
     min-height: 130px;
   }
+  .navbar-brand:not(.shrink) {
+    width: 8rem;
+    max-width: 50vw;
+  }
 }
 .navbar-toggler {
   position: absolute;
@@ -12196,12 +12194,13 @@ nav {
   margin-bottom: 170px !important;
 }
 
-.m-vw-lg-50 {
-  max-width: 80vh;
-  max-height: 80vh;
-}
-
 /* slick carousel styling */
+@media screen and (min-width: 992px) {
+  .carouselHolder {
+    max-width: 80vh;
+    max-height: 80vh;
+  }
+}
 /* dot colors */
 .slick-dots li button:before {
   color: #f6f7eb;

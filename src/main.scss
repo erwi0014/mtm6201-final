@@ -181,12 +181,6 @@ $btn-active-border-tint-amount:   10%;
     footer img{
         width: auto;
     }
-
-        @media (min-width: 992px) {
-            .nav-title {
-                display: block !important; /* Override any .hide class */
-            }
-        }
         
         .hide{
             transition: scale 200ms;
@@ -195,7 +189,6 @@ $btn-active-border-tint-amount:   10%;
             transform: scale(0.1);
             opacity: 0;
             position: absolute;
-            filter: blur(3px);
         } 
 
     // button stlying
@@ -274,6 +267,11 @@ $btn-active-border-tint-amount:   10%;
         nav{
             min-height: 130px;
         }
+
+        .navbar-brand:not(.shrink){
+            width: 8rem;
+            max-width: 50vw;
+        }
     }
 
     .navbar-toggler{
@@ -298,14 +296,20 @@ $btn-active-border-tint-amount:   10%;
     margin-bottom: 170px !important;
     }
 
-    .m-vw-lg-50{
-        max-width: 80vh;
-        max-height: 80vh;
-    }
-
     
 
     /* slick carousel styling */
+
+    // .carouselItem{
+    //     max-width: 100vw;
+    // }
+
+    @media screen and (min-width: 992px) {
+        .carouselHolder{
+            max-width: 80vh;
+            max-height: 80vh;
+        }
+    }
 
     // .carouselHolder{
     //     height: 70vh;

@@ -61,24 +61,3 @@ $(document).ready(function(){
         
     });
   });
-  
-  
-
-  function scrollToNextArticle() {
-    // Find the currently visible article
-    const articles = document.querySelectorAll('article');
-    let currentArticle;
-
-    for (let i = 0; i < articles.length; i++) {
-        const rect = articles[i].getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            currentArticle = articles[i];
-            break;
-        }
-    }
-
-    // Scroll to the next article
-    if (currentArticle && currentArticle.nextElementSibling) {
-        currentArticle.nextElementSibling.scrollIntoView({ behavior: 'smooth' });
-    }
-}
