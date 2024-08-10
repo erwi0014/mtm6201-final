@@ -10,6 +10,7 @@ $danger: orange;
 $light: #f6f7eb;
 $dark: #393E41;
 $tertiary: #9764c7;
+$tertiary-emphasis:#5C415D;
 
 
 $btn-font-family:             'Space Grotesk';
@@ -223,12 +224,48 @@ $btn-active-border-tint-amount:   10%;
         }
 
         .btn-primary:focus{
-            border: solid 4px;
+            border: solid 4px $primary-text-emphasis;
         }
 
         .btn-primary:active{
             background-color: $primary-text-emphasis;
             border: solid 4px $primary-text-emphasis;
+        }
+
+        .btn-tertiary:hover{
+            color: $light;
+            box-shadow: none;
+            background-color: $tertiary;
+            border: solid 4px $tertiary-emphasis;
+        }
+
+        .btn-tertiary:focus{
+            border: solid 4px $dark;
+            background-color: $tertiary-emphasis;
+            color: $light;
+        }
+
+        .btn-tertiary:active{
+            background-color: $tertiary-emphasis;
+            border: solid 4px $tertiary-emphasis;
+        }
+
+        .btn-secondary:hover{
+            color: $light;
+            box-shadow: none;
+            background-color: $secondary;
+            border: solid 4px $secondary-text-emphasis;
+        }
+
+        .btn-secondary:focus{
+            border: solid 4px $dark;
+            background-color: $secondary-text-emphasis;
+            color: $light;
+        }
+
+        .btn-secondary:active{
+            background-color: $secondary-text-emphasis;
+            border: solid 4px $secondary-text-emphasis;
         }
 
 // home page specific

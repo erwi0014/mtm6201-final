@@ -12126,12 +12126,48 @@ footer img {
 }
 
 .btn-primary:focus {
-  border: solid 4px;
+  border: solid 4px #5d2016;
 }
 
 .btn-primary:active {
   background-color: #5d2016;
   border: solid 4px #5d2016;
+}
+
+.btn-tertiary:hover {
+  color: #f6f7eb;
+  box-shadow: none;
+  background-color: #9764c7;
+  border: solid 4px #5C415D;
+}
+
+.btn-tertiary:focus {
+  border: solid 4px #393E41;
+  background-color: #5C415D;
+  color: #f6f7eb;
+}
+
+.btn-tertiary:active {
+  background-color: #5C415D;
+  border: solid 4px #5C415D;
+}
+
+.btn-secondary:hover {
+  color: #f6f7eb;
+  box-shadow: none;
+  background-color: #ffcc38;
+  border: solid 4px #665216;
+}
+
+.btn-secondary:focus {
+  border: solid 4px #393E41;
+  background-color: #665216;
+  color: #f6f7eb;
+}
+
+.btn-secondary:active {
+  background-color: #665216;
+  border: solid 4px #665216;
 }
 
 #bento {
