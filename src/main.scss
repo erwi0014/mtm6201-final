@@ -415,6 +415,9 @@ $btn-active-border-tint-amount:   10%;
             color: $secondary;
         }
 
+
+    .bento_simple > [class^='col-'] { max-height: none;}
+
 // about page specific styles
     #mission-title{
         background: url("/src/images/about-page/mission.jpg") center no-repeat;

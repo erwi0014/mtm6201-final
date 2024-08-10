@@ -12247,6 +12247,10 @@ nav {
   color: #ffcc38;
 }
 
+.bento_simple > [class^=col-] {
+  max-height: none;
+}
+
 #mission-title {
   background: url("/src/images/about-page/mission.jpg") center no-repeat;
   background-size: cover;
