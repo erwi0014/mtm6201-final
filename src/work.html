@@ -15,39 +15,41 @@
     </head>
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark"> 
+            <a class="visually-hidden-focusable link-light" href="#photographyArticle">Skip to photography</a>
+            <a class="visually-hidden-focusable link-light" href="#graphicsArticle">Skip to graphics</a>
+            <a class="visually-hidden-focusable link-light" href="#webArticle">web development</a>
             <div class="container-fluid align-items-start justify-content-end">
-              <a class="navbar-brand link-light logo-size shrink" id="logoLink" href="index.html">
+              <a class="navbar-brand link-light logo-size shrink" id="logoLink" href="index.html" aria-label="go to home page">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
                     <path class="cls-1" d="M638.93,117.48h-281.83c36.46,33.58,58.03,82.64,58.03,141.1v330.62c0,75.44-30.13,139.61-80.04,183.19h284.87c173.44,0,280.04-130.08,280.04-339.65,0-197.83-96.66-315.27-261.07-315.27ZM604.6,752.53h-21.68V239.43c0-46.97-19.87-83.11-53.3-103.88h78.59c51.49,0,85.82,123.76,85.82,305.33s-36.14,311.65-89.43,311.65Z"/>
                     <path class="cls-1" d="M93.95,119.47v18.97c38.84,0,65.04,23.49,65.04,57.81v453.47c0,54.2-23.49,90.33-63.23,90.33-42.46,0-76.78-38.84-76.78-94.85H0c0,82.21,69.56,137.31,166.21,137.31,115.63,0,198.73-77.69,198.73-193.31v-330.62c0-83.11-55.1-139.11-139.11-139.11H93.95Z"/>
                 </svg>
                 <div class="nav-title d-none d-lg-block">Joryn Designs</div>
               </a>
-              <h1 class="h1 text-light d-none d-md-block d-lg-none position-absolute py-2" id="tabletTitle">Work</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px;">
                 <span class="navbar-toggler-icon logo-size-toggler"></span>
               </button>
               <div class="collapse navbar-collapse flex-lg-row align-items-center justify-content-lg-center mw-60" id="navbarNav" style="margin-top: 15px;">
                 <ul class="navbar-nav text-center align-items-lg-start justify-content-lg-around flex-grow-1">
                   <li class="nav-item h3">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" aria-label="go to home page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item h3">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" aria-label="go to about page (current)" href="about.html">About</a>
                   </li>
                   <li class="nav-item h3">
-                    <a class="nav-link active" aria-current="page" href="work.html">Work</a>
+                    <a class="nav-link active" aria-current="page" aria-label="go to work page (portfolio)" href="work.html">Work</a>
                   </li>
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <div class="mb-170px bg-light pb-5" id="bg-container">
             <h1 class="container h1 text-primary d-md-none" id="mobileTitle">Work</h1>
-            <article class="portfolio-item d-flex flex-column justify-content-center">
+            <article class="portfolio-item d-flex flex-column justify-content-center" id="photographyArticle">
                 <div class="container d-grid gap-2 border-bottom border-4 border-secondary">
                     <div class="row gap-sm-5 gap-md-0">
                         <div class="col-md-6 d-flex flex-column gap-2" data-aos="fade-right">
